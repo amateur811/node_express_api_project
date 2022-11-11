@@ -1,0 +1,50 @@
+//It will create a file called package.json & initialise it. 
+npm init -y
+
+//Create a new index.js file
+//It is the starting point of our server
+
+ //install express in your project
+ npm install --save express
+ 
+//type node -v to get the version
+node -v
+
+//initialise express in your index.js
+import express from 'express';
+
+//add this to allow import in project
+"type":"module"  
+//after debug
+
+//to take in incoming post request body
+import bodyParser from 'body-parser';
+
+//then initialise express application by
+const app = express();
+//whole application lies inside this function
+
+//set the port
+const PORT = 5000;
+
+//convert the body to json 
+app.use(bodyParser.json());
+
+//listen the port with a message
+app.listen(port, () => console.log(`Server running on port: http://localhost:${PORT}`));
+
+//now if we run node index.js in terminal, our application will run
+ node index.js
+ 
+ //instead of saving and re-running, auto run could be possible by nodemon
+ npm install --save--dev nodemon
+ 
+ //to use our own script write in package.json
+ --put this 
+ "start": "nodemon index.js"
+ --then run on terminal 
+ npm start
+ 
+ //currently it shows error as no routes are present
+http://localhost:5001/
+
