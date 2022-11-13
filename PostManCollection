@@ -1,0 +1,42 @@
+
+POST
+Post Users
+http://localhost:5004/api/post/
+
+json
+{
+  "name": "san",
+  "lastName": "mis",
+  "age": 74
+}
+
+
+GET
+Get Request for all users
+http://localhost:5004/api/users/
+
+
+
+GET
+Get user by id
+http://localhost:5004/api/1a87ce65-ba65-4498-9d88-a45b1c3c420b
+
+
+
+DEL
+Delete User by id
+http://localhost:5004/api/1a87ce65-ba65-4498-9d88-a45b1c3c420b
+
+
+
+PATCH
+Update User with id
+http://localhost:5004/api/59517428-a457-4fa2-aa6e-f88cff8be2a7
+
+
+json
+{
+  "name": "ved",
+  "lastName": "vah",
+  "age": 12345
+}
